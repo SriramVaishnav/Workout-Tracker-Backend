@@ -7,6 +7,8 @@ const workoutRoutes = require('./routes/workouts')
 // express app
 const app = express()
 
+app.use(express.static("build"));
+
 // middleware
 app.use(express.json())
 
